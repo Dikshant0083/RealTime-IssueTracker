@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Real-Time Issue Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Simple, clean styles */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fb;
+  color: #111;
+}
+header {
+  background: #0b5fff;
+  color: white;
+  padding: 16px 20px;
+}
+header h1 { margin: 0 0 6px 0; font-size: 20px; }
+main { padding: 20px; max-width: 1000px; margin: 0 auto; }
+section { margin-bottom: 24px; background: white; padding: 16px; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+form label { display: block; margin-bottom: 8px; font-size: 14px; }
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  border: 1px solid #d7dfe8;
+  border-radius: 4px;
+}
+button { background: #0b5fff; color: white; border: none; padding: 10px 12px; border-radius: 6px; cursor: pointer; }
+button:hover { filter: brightness(0.95); }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eef2f6; vertical-align: top; }
+th { background: #f0f4ff; font-weight: 600; font-size: 14px; }
+
+.comment {
+  background: #f6f8fb;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+.small-note { font-size: 12px; color: #666; }
+.actions { display:flex; gap:8px; align-items:center; }
+.status-select { width: 130px; }
+.comment-form { display:flex; gap:8px; margin-top:8px; }
+.comment-form input { flex:1; }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Real-Time Issue Tracker</h1>
+    <p>Create issues, change status, add comments — updates appear instantly for everyone.</p>
+  </header>
+
+  <main>
+    <section id="create">
+      <h2>Create a new issue</h2>
+      <form id="createForm">
+        <label>
+          Title
+          <input type="text" id="title" required />
+        </label>
+        <label>
+          Description
+          <textarea id="description" rows="2"></textarea>
+        </label>
+        <label>
+          Your name
+          <input type="text" id="createdBy" placeholder="Alice" required />
+        </label>
+        <button type="submit">Create Issue</button>
+      </form>
+    </section>
+
+    <section id="issuesSection">
+      <h2>Issues</h2>
+      <table id="issuesTable">
+        <thead>
+          <tr>
+            <th>ID</th><th>Title</th><th>Description</th><th>Status</th><th>Created By</th><th>Comments</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="issuesBody">
+          <!-- rendered by JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  
+
+  <script src="/app.js"></script>
+</body>
+</html>
