@@ -21,7 +21,13 @@
     "status": "Open",
     "createdBy": "Bhavya",
     "createdAt": "2025-10-08T06:20:49.572Z",
-    "comments": []
+    "comments": [
+      {
+        "author": "gurshan",
+        "text": "Kam nhi hunda bai",
+        "createdAt": "2025-10-08T06:50:03.376Z"
+      }
+    ]
   },
   {
     "id": 3,
