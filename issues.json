@@ -22,5 +22,14 @@
     "createdBy": "Bhavya",
     "createdAt": "2025-10-08T06:20:49.572Z",
     "comments": []
+  },
+  {
+    "id": 3,
+    "title": "commit issue",
+    "description": "git repo",
+    "status": "Open",
+    "createdBy": "Gurshan",
+    "createdAt": "2025-10-08T06:36:11.927Z",
+    "comments": []
   }
 ]
