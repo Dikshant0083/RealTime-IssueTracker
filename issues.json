@@ -42,7 +42,7 @@
     "id": 4,
     "title": "auto commit issue",
     "description": "auto push to git",
-    "status": "Open",
+    "status": "Closed",
     "createdBy": "dikshant",
     "createdAt": "2025-10-08T06:42:24.593Z",
     "comments": []
